@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConverterService } from '../converter.service';
 
 @Component({
   selector: 'app-convert-page',
@@ -15,7 +16,11 @@ export class ConvertPageComponent implements OnInit {
     return this.amount * this.rate;
   }
 
-  constructor() { }
+  constructor(private service: ConverterService) {
+    this.service.getRates(this.from).subscribe((res) => {
+      console.log(res);
+    });
+   }
 
   ngOnInit(): void {
   }
