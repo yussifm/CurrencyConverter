@@ -3,14 +3,22 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { ConvertPageComponent } from './convert-page/convert-page.component';
+import { AboutPageComponent } from './about-page/about-page.component';
+import { FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent,
+    ConvertPageComponent,
+    AboutPageComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,18 @@
+:host {
+    text-align: center;
+}
+
+input {
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
+
+label {
+    margin: 5px;
+}
+
+b {
+    color: #00a9eb;
+    margin: 3px;
+}

@@ -1,0 +1,15 @@
+header {
+    background-color: #00a9eb;
+    padding: 15px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+
+nav a:hover {
+    font-size: larger;
+    background-color: #4fccf1;
+}
